@@ -1,0 +1,44 @@
+@import "../Global.scss";
+
+.hour-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .hour-text{
+    color:$secondary-color;
+    width: 25px;
+    height: 25px;
+    font-size: $description-text;
+    text-align: center;
+    border: 2px solid $secondary-color;
+    margin: 0 5px;
+  }
+  .decrement-button,
+  .increment-button {
+    color: $primary-color;
+    font-size: $sub-title-text;
+    background-color: $secondary-color;
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid $primary-color;
+    cursor: pointer;
+    &:hover {
+      border-color: $secondary-color;
+    }
+    &:active {
+      color: $secondary-color;
+      background-color: $primary-color;
+    }
+    &::after{
+      content: "+";
+    }
+  }
+  .decrement-button{
+    line-height: 18px;
+    &::after{
+      content: "-";
+    }
+  }
+}

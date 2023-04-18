@@ -1,0 +1,69 @@
+@import "../../Global.scss";
+
+.todo-list-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 50px auto;
+  padding: 50px 0;
+  .header-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 0;
+
+    .title,
+    .title-selected {
+      color: $secondary-color;
+      font-size: $sub-title-text;
+      text-decoration: none;
+      height: 30px;
+      cursor: pointer;
+      &:hover {
+        color: $primary-color;
+        padding-bottom: 2px;
+        border-bottom: 2px solid $primary-color;
+      }
+    }
+    .title-selected {
+      padding-bottom: 2px;
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+  .page-container {
+    display: flex;
+    justify-content: center;
+  }
+  .add-container {
+    display: flex;
+    justify-content: center;
+
+    .add-button {
+      color: $secondary-color;
+      font-size: $sub-title-text;
+      width: 30px;
+      height: 30px;
+      line-height: 25px;
+      text-align: center;
+      border: 2px solid $secondary-color;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover {
+        border-color: $primary-color;
+      }
+      &:active {
+        color: $primary-color;
+      }
+      &::after{
+        content: "+";
+      }
+    }
+  }
+  .add-input {
+    margin: 0 30px;
+    width: 200px;
+    font-size: 16px;
+    color: $secondary-color;
+    border-bottom: 2px solid $primary-color;
+  }
+  
+}

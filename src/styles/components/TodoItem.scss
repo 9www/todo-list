@@ -1,0 +1,76 @@
+@import "../Global.scss";
+
+.todo-item-container{
+  display: flex;
+  margin:10px 0;
+  .complete-button,.completed-button{
+    color: $secondary-color;
+    font-size: $sub-title-text;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    border: 2px solid $secondary-color;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      border-color: $primary-color;
+    }
+    &:active {
+      color: $primary-color;
+    }
+    &::before{
+      content: " ";
+    }
+  }
+  .completed-button{
+    &::before{
+      content: "✓";
+    }
+  }
+  .todo-text-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 30px;
+    align-items: center;
+  .todo-text{
+    width: 200px;
+    font-size: 16px;
+    color: $secondary-color;
+  }
+}
+  .edit-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 30px;
+    align-items: center;
+  .edit-input{
+    width: 180px;
+    font-size: 16px;
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
+  }
+  .edited-button{
+    color: $secondary-color;
+    font-size: $description-text;
+    width: 20px;
+    height: 20px;
+    line-height: 15px;
+    text-align: center;
+    border: 2px solid $secondary-color;
+    cursor: pointer;
+    &:hover {
+      border-color: $primary-color;
+    }
+    &:active {
+      color: $primary-color;
+    }
+    &::after{
+      content: "E";
+    }
+  }
+}
+}
+

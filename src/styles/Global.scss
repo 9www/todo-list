@@ -1,0 +1,24 @@
+$primary-color: #f68c43;
+$secondary-color: #eaecee;
+$primary-background-color: #1d2228;
+$secondary-background-color: #2c343e;
+$title-text: 36px;
+$sub-title-text: 24px;
+$description-text: 16px;
+
+.main-color {
+  color: $primary-color;
+}
+.second-color {
+  color: $secondary-color;
+}
+
+.title-text {
+  font-size: 36px;
+}
+.sub-title-text {
+  font-size: 24px;
+}
+.description-text {
+  font-size: 16px;
+}

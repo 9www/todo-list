@@ -1,0 +1,30 @@
+@import "../../Global.scss";
+
+.todo-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .title {
+    text-align: center;
+    color: $secondary-color;
+    font-size: $title-text;
+  }
+  .todo-items-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .total-hours-text {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    color: $secondary-color;
+    font-size: $description-text;
+    text-align: center;
+    margin: 10px auto 10px 80%;
+    &::before{
+      content: "━━━━";
+    }
+  }
+}

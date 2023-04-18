@@ -1,0 +1,17 @@
+@import "../../Global.scss";
+
+.schedule-page-container{
+  .title{
+    text-align: left;
+    color: $secondary-color;
+    font-size: $title-text;
+  }
+  .todo-items-container{
+
+    .date-group-text{
+      color: $secondary-color;
+      font-size: $sub-title-text;
+      
+    }
+  }
+}
